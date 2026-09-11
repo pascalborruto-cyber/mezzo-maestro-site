@@ -2,6 +2,12 @@ import vinext from "vinext";
 import { defineConfig } from "vite";
 import hostingConfig from "./.openai/hosting.json";
 import { sites } from "./build/sites-vite-plugin";
+import { cdnAdapter } from "@vinext/cloudflare/cache/cdn-adapter";
+// `vinext-cloudflare deploy` vérifie la présence du plugin Cloudflare par
+// analyse statique de cet import ; à l'exécution, c'est l'import dynamique
+// plus bas (délibéré, voir son commentaire) qui fait réellement foi et
+// masque celui-ci dans la portée de la fonction.
+import { cloudflare } from "@cloudflare/vite-plugin";
 
 const SITE_CREATOR_PLACEHOLDER_DATABASE_ID =
   "00000000-0000-4000-8000-000000000000";
@@ -13,7 +19,9 @@ const isCodexSeatbeltSandbox = process.env.CODEX_SANDBOX === "seatbelt";
 
 const localBindingConfig = {
   main: "./worker/index.ts",
-  compatibility_flags: ["nodejs_compat"],
+  // `nodejs_compat` now comes from wrangler.jsonc (read alongside this inline
+  // config by @cloudflare/vite-plugin) : lister le drapeau ici aussi le fait
+  // apparaître deux fois et Miniflare refuse de démarrer.
   d1_databases: d1
     ? [
         {
@@ -48,7 +56,9 @@ export default defineConfig(async () => {
       ? { watch: { useFsEvents: false, usePolling: true } }
       : undefined,
     plugins: [
-      vinext(),
+      vinext({
+        cache: { cdn: cdnAdapter() },
+      }),
       sites(),
       cloudflare({
         viteEnvironment: { name: "rsc", childEnvironments: ["ssr"] },
