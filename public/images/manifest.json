@@ -1,0 +1,68 @@
+{
+  "mezzo-maestro-clown-musical-concert": {
+    "largeurs": [
+      640,
+      1024,
+      1536,
+      2048
+    ],
+    "width": 4724,
+    "height": 4098
+  },
+  "mezzo-maestro-clown-musical-duo": {
+    "largeurs": [
+      640,
+      1024,
+      1536
+    ],
+    "width": 4724,
+    "height": 4117
+  },
+  "mezzo-maestro-clown-musical-duel": {
+    "largeurs": [
+      640,
+      1024,
+      1536
+    ],
+    "width": 4725,
+    "height": 4158
+  },
+  "mezzo-maestro-clown-musical-baguette-blessee": {
+    "largeurs": [
+      640,
+      1024,
+      1536
+    ],
+    "width": 4724,
+    "height": 4495
+  },
+  "mezzo-maestro-clown-musical-salut": {
+    "largeurs": [
+      640,
+      1024,
+      1536
+    ],
+    "width": 4725,
+    "height": 4238
+  },
+  "mezzo-clown-musicien-percussions-portrait": {
+    "largeurs": [
+      480,
+      768,
+      1024,
+      1536
+    ],
+    "width": 4464,
+    "height": 4725
+  },
+  "maestro-clown-musicien-guitare-portrait": {
+    "largeurs": [
+      480,
+      768,
+      1024,
+      1536
+    ],
+    "width": 3590,
+    "height": 4725
+  }
+}

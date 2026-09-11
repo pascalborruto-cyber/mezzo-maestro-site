@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="620" viewBox="0 0 1400 620" role="img" aria-labelledby="title desc">
+  <title id="title">Logo Mezzo &amp; Maestro</title>
+  <desc id="desc">Logo ivoire, rouge brique et moutarde pour le duo de clown musical Mezzo et Maestro.</desc>
+  <rect width="1400" height="620" rx="34" fill="#1f1d1a"/>
+  <path d="M145 132H1255" stroke="#b74732" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="145" cy="132" r="13" fill="#d3a33d"/>
+  <circle cx="1255" cy="132" r="13" fill="#d3a33d"/>
+  <text x="700" y="285" text-anchor="middle" fill="#f4eddf" font-family="Georgia, 'Times New Roman', serif" font-size="136" font-weight="700" letter-spacing="11">MEZZO</text>
+  <g transform="translate(700 370)">
+    <circle r="43" fill="#b74732"/>
+    <text x="0" y="17" text-anchor="middle" fill="#f4eddf" font-family="Georgia, 'Times New Roman', serif" font-size="58" font-style="italic">&amp;</text>
+  </g>
+  <text x="700" y="535" text-anchor="middle" fill="#d3a33d" font-family="Georgia, 'Times New Roman', serif" font-size="136" font-weight="700" letter-spacing="7">MAESTRO</text>
+  <path d="M176 558H1224" stroke="#f4eddf" stroke-width="3" opacity=".7"/>
+</svg>

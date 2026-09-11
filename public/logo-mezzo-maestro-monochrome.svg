@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="620" viewBox="0 0 1400 620" role="img" aria-labelledby="title desc">
+  <title id="title">Logo monochrome Mezzo &amp; Maestro</title>
+  <desc id="desc">Version monochrome transparente du logo Mezzo et Maestro.</desc>
+  <g fill="#111111">
+    <path d="M145 128H1255V136H145Z"/>
+    <circle cx="145" cy="132" r="13"/>
+    <circle cx="1255" cy="132" r="13"/>
+    <text x="700" y="285" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="136" font-weight="700" letter-spacing="11">MEZZO</text>
+    <circle cx="700" cy="370" r="43"/>
+    <text x="700" y="387" text-anchor="middle" fill="#ffffff" font-family="Georgia, 'Times New Roman', serif" font-size="58" font-style="italic">&amp;</text>
+    <text x="700" y="535" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="136" font-weight="700" letter-spacing="7">MAESTRO</text>
+    <path d="M176 556H1224V559H176Z"/>
+  </g>
+</svg>
